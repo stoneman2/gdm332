@@ -1,0 +1,199 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using Unity.Netcode;
+using UnityEngine;
+
+public class LoginManager : MonoBehaviour
+{
+    public static LoginManager Instance;
+    public string[] players = new string[64];
+    public string hostServerID;
+    public List<uint> AlternatePlayerPrefabs = new List<uint>();
+    public string myUsername;
+
+    public class ConnectionPayload
+    {
+        public string username;
+        public string joinCode;
+        public int colorPicked;
+    }
+
+    private void Start()
+    {
+        NetworkManager.Singleton.OnServerStarted += HandleServerStarted;
+        NetworkManager.Singleton.OnClientConnectedCallback += HandleClientConnected;
+        NetworkManager.Singleton.OnClientDisconnectCallback += HandleClientDisconnect;
+    }
+
+    private void HandleServerStarted()
+    {
+        Debug.Log("Server started");
+    }
+
+    private void HandleClientConnected(ulong clientId)
+    {
+        GameManager.Instance.mainMenu.SetActive(false);
+        GameManager.Instance.joinMenu.SetActive(false);
+        GameManager.Instance.hostMenu.SetActive(false);
+        GameManager.Instance.leaveButton.SetActive(true);
+        GameManager.Instance.oldCam.SetActive(false);
+    }
+
+    private void HandleClientDisconnect(ulong clientId)
+    {
+        players[clientId] = null;
+    }
+
+    public void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+
+    public void StartHost(string serverID, string username, int colorPicked)
+    {
+        var payload = new ConnectionPayload
+        {
+            username = username,
+            joinCode = serverID,
+            colorPicked = colorPicked
+        };
+
+        myUsername = username;
+
+        string payloadString = JsonUtility.ToJson(payload);
+        NetworkManager.Singleton.NetworkConfig.ConnectionData = System.Text.Encoding.ASCII.GetBytes(payloadString);
+        NetworkManager.Singleton.ConnectionApprovalCallback = ApprovalCheck;
+        NetworkManager.Singleton.StartHost();
+        hostServerID = serverID;
+    }
+    public void DisconnectFromServer()
+    {
+        if (NetworkManager.Singleton.IsHost)
+        {
+            NetworkManager.Singleton.ConnectionApprovalCallback -= ApprovalCheck;
+        }
+
+        NetworkManager.Singleton.Shutdown();
+        GameManager.Instance.mainMenu.SetActive(true);
+        GameManager.Instance.leaveButton.SetActive(false);
+        GameManager.Instance.oldCam.SetActive(true);
+    }
+
+    public void ClientJoin(string serverID, string username, int colorPicked)
+    {
+        var payload = new ConnectionPayload
+        {
+            username = username,
+            joinCode = serverID,
+            colorPicked = colorPicked
+        };
+
+        myUsername = username;
+
+        string payloadString = JsonUtility.ToJson(payload);
+        NetworkManager.Singleton.NetworkConfig.ConnectionData = System.Text.Encoding.ASCII.GetBytes(payloadString);
+        NetworkManager.Singleton.StartClient();
+    }
+
+    private void SetSpawnLocation(ulong clientId, NetworkManager.ConnectionApprovalResponse response)
+    {
+        Vector3 spawnPos = Vector3.zero;
+        Quaternion spawnRot = Quaternion.identity;
+        
+        // Set the spawn location to the host's location
+        if (clientId == NetworkManager.Singleton.LocalClientId)
+        {
+            spawnPos = new Vector3(2, 1, 0);
+            spawnRot = Quaternion.Euler(0, 135f, 0);
+        }
+
+        // Randomize the spawn location for the client
+        else
+        {
+            spawnPos = new Vector3(Random.Range(-5, 5), 1, Random.Range(-5, 5));
+            spawnRot = Quaternion.Euler(0, Random.Range(0, 360), 0);
+        }
+
+        response.Position = spawnPos;
+        response.Rotation = spawnRot;
+    }
+
+    private void ApprovalCheck(NetworkManager.ConnectionApprovalRequest request, NetworkManager.ConnectionApprovalResponse response)
+    {
+            bool isApproved = true;
+            // Validation
+            var payload = JsonUtility.FromJson<ConnectionPayload>(System.Text.Encoding.ASCII.GetString(request.Payload));
+
+            if (payload != null)
+            {
+                Debug.Log($"Payload: {payload.username} {payload.joinCode}");
+                if (string.IsNullOrEmpty(payload.username) || string.IsNullOrEmpty(payload.joinCode))
+                {
+                    Debug.Log("Invalid payload");
+                    response.Reason = "Invalid payload";
+                    isApproved = false;
+                }
+
+                if (players.Contains(payload.username))
+                {
+                    Debug.Log("Username already in use");
+                    response.Reason = "Username already in use";
+                    isApproved = false;
+                }
+
+                Debug.Log(NetworkManager.Singleton.IsHost);
+
+                if (hostServerID != payload.joinCode && request.ClientNetworkId != 0)
+                {
+                    Debug.Log("Invalid join code");
+                    response.Reason = "Invalid join code";
+                    isApproved = false;
+                }
+            }
+
+            // The client identifier to be authenticated
+            var clientId = request.ClientNetworkId;
+
+            // Additional connection data defined by user code
+            var connectionData = request.Payload;
+
+            // Your approval logic determines the following values
+            response.Approved = isApproved;
+            response.CreatePlayerObject = true;
+
+            // The Prefab hash value of the NetworkPrefab, if null the default NetworkManager player Prefab is used
+            response.PlayerPrefabHash = AlternatePlayerPrefabs[payload.colorPicked];
+
+            // Position to spawn the player object (if null it uses default of Vector3.zero)
+            response.Position = Vector3.zero;
+
+            // Rotation to spawn the player object (if null it uses the default of Quaternion.identity)
+            response.Rotation = Quaternion.identity;
+
+            SetSpawnLocation(clientId, response);
+
+            // If response.Approved is false, you can provide a message that explains the reason why via ConnectionApprovalResponse.Reason
+            // On the client-side, NetworkManager.DisconnectReason will be populated with this message via DisconnectReasonMessage
+            response.Reason = "Some reason for not approving the client";
+
+            Debug.Log($"Connection request from {clientId} approved: {isApproved}");
+            if (isApproved && payload != null)
+            {
+                Debug.Log($"Player {clientId} approved with username {payload.username}");
+                // Add our client ID to the player!
+                players[clientId] = payload.username;
+            }
+
+            // If additional approval steps are needed, set this to true until the additional steps are complete
+            // once it transitions from true to false the connection approval response will be processed.
+            response.Pending = false;
+    }
+}

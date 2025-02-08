@@ -70,3 +70,587 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Plugins/QFSW/Quantum Console/Source/Third-Party Notices.txt.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Third-Party Notices.txt
+Assets/Plugins/QFSW/Quantum Console/Source/Textures/UIBevel.png.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Textures/UIBevel.png
+Assets/Plugins/QFSW/Quantum Console/Source/Textures/MagnifyingGlass.png.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Textures/MagnifyingGlass.png
+Assets/Plugins/QFSW/Quantum Console/Source/Textures/Icon.png.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Textures/Icon.png
+Assets/Plugins/QFSW/Quantum Console/Source/Textures/DragArrow.png.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Textures/DragArrow.png
+Assets/Plugins/QFSW/Quantum Console/Source/Textures/BannerEditor.png.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Textures/BannerEditor.png
+Assets/Plugins/QFSW/Quantum Console/Source/Textures.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Shaders/Blur.shader.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Shaders/Blur.shader
+Assets/Plugins/QFSW/Quantum Console/Source/Shaders.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/TextProcessing.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/TextProcessing.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/StringExtensions.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/StringExtensions.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/SceneUtilities.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/SceneUtilities.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/ReflectionExtensions.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/ReflectionExtensions.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/LogTypeExtensions.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/LogTypeExtensions.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/GameObjectExtensions.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/GameObjectExtensions.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/ColorExtensions.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/ColorExtensions.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/CollectionExtensions.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities/CollectionExtensions.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Utilities.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/ZoomUIController.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/ZoomUIController.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/ResizableUI.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/ResizableUI.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/QFSW.QC.UI.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/QFSW.QC.UI.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/DynamicCanvasScaler.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/DynamicCanvasScaler.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/DraggableUI.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/DraggableUI.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/BlurShaderController.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI/BlurShaderController.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/UI.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/TypeFormatter.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/TypeFormatter.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/SupportedState.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/SupportedState.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Tags/SceneNameTag.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Tags/SceneNameTag.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Tags/InlineSuggestionsTag.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Tags/InlineSuggestionsTag.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Tags/CommandNameTag.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Tags/CommandNameTag.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Tags.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestorUtilities.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestorUtilities.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestorTagAttribute.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestorTagAttribute.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/SceneNameSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/SceneNameSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/QFSW.QC.Suggestors.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/QFSW.QC.Suggestors.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/MacroSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/MacroSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/InlineSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/InlineSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/GameObjectSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/GameObjectSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/EnumSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/EnumSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/ComponentSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/ComponentSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/CommandSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/CommandSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/CommandSuggestion.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/CommandSuggestion.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/CommandNameSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/CommandNameSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/BoolSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors/BoolSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/Suggestors.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestorOptions.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestorOptions.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestionStack.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestionStack.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestionSet.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestionSet.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestionContext.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/SuggestionContext.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/RawSuggestion.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/RawSuggestion.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/QuantumSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/QuantumSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/IQcSuggestorTag.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/IQcSuggestorTag.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/IQcSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/IQcSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/IQcSuggestionFilter.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/IQcSuggestionFilter.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/IQcSuggestion.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/IQcSuggestion.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/BasicCachedQcSuggestor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions/BasicCachedQcSuggestor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Suggestions.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/SuggestionDisplay.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/SuggestionDisplay.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/SortOrder.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/SortOrder.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/Vector4Serializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/Vector4Serializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/Vector3Serializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/Vector3Serializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/Vector3IntSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/Vector3IntSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/Vector2Serializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/Vector2Serializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/Vector2IntSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/Vector2IntSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/UnityObjectSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/UnityObjectSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/TypeSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/TypeSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/StringSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/StringSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/QFSW.QC.Serializers.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/QFSW.QC.Serializers.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/KeyValuePairSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/KeyValuePairSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/ITupleSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/ITupleSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/IEnumerableSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/IEnumerableSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/IDictionarySerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/IDictionarySerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/DictionaryEntrySerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers/DictionaryEntrySerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/Serializers.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/QuantumSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/QuantumSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/PolymorphicQcSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/PolymorphicQcSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/IQcSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/IQcSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/GenericQcSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/GenericQcSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/BasicQcSerializer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization/BasicQcSerializer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Serialization.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/ScanRuleResult.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/ScanRuleResult.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/Rules/QFSW.QC.ScanRules.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/Rules/QFSW.QC.ScanRules.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/Rules/QcIgnoreScanRule.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/Rules/QcIgnoreScanRule.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/Rules/AssemblyExclusionScanRule.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/Rules/AssemblyExclusionScanRule.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/Rules.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/QuantumScanRuleset.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/QuantumScanRuleset.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/IQcScanRule.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules/IQcScanRule.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Scan Rules.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/ResponseConfig.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/ResponseConfig.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumTheme.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumTheme.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumRegistry.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumRegistry.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumMacros.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumMacros.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumLocalization.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumLocalization.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumKeyConfig.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumKeyConfig.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumConsoleProcessor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumConsoleProcessor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumConsoleCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumConsoleCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumConsole.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QuantumConsole.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QFSW.QC.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/QFSW.QC.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Preprocessing/QuantumPreprocessor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Preprocessing/QuantumPreprocessor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Preprocessing/IQcPreprocessor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Preprocessing/IQcPreprocessor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Preprocessing.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Pooling/StringBuilderPool.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Pooling/StringBuilderPool.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Pooling/Pool.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Pooling/Pool.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Pooling/IPool.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Pooling/IPool.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Pooling/ConcurrentPool.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Pooling/ConcurrentPool.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Pooling.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Platform.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Platform.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/QuantumParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/QuantumParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/PolymorphicQcParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/PolymorphicQcParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/PolymorphicCachedQcParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/PolymorphicCachedQcParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/Vector4Parser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/Vector4Parser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/Vector3Parser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/Vector3Parser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/Vector3IntParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/Vector3IntParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/Vector2Parser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/Vector2Parser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/Vector2IntParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/Vector2IntParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/TypeParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/TypeParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/TupleParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/TupleParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/StringParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/StringParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/QuaternionParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/QuaternionParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/QFSW.QC.Parsers.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/QFSW.QC.Parsers.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/PrimitiveParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/PrimitiveParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/NullableParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/NullableParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/GameObjectParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/GameObjectParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/EnumParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/EnumParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/EnumerableParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/EnumerableParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/ComponentParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/ComponentParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/ColorParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/ColorParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/CollectionParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/CollectionParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/BoolParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/BoolParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/ArrayParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers/ArrayParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Parsers.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/MassGenericQcParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/MassGenericQcParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/IQcParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/IQcParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/IQcGrammarConstruct.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/IQcGrammarConstruct.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/QFSW.QC.Grammar.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/QFSW.QC.Grammar.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/ExpressionBodyGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/ExpressionBodyGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/BooleanNegationGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/BooleanNegationGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/SubtractionOperatorGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/SubtractionOperatorGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/MultiplyOperatorGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/MultiplyOperatorGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/ModulusOperatorGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/ModulusOperatorGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/IBinaryOperator.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/IBinaryOperator.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/ExclusiveOrOperatorGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/ExclusiveOrOperatorGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/DynamicBinaryOperator.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/DynamicBinaryOperator.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/DivisionOperatorGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/DivisionOperatorGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/BitwiseOrOperatorGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/BitwiseOrOperatorGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/BitwiseAndOperatorGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/BitwiseAndOperatorGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/BinaryOperatorGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/BinaryOperatorGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/BinaryOperatorData.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/BinaryOperatorData.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/BinaryAndUnaryOperatorGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/BinaryAndUnaryOperatorGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/AdditionOperatorGrammar.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators/AdditionOperatorGrammar.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar/Binary Operators.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Grammar.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/GenericQcParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/GenericQcParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/GenericCachedQcParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/GenericCachedQcParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Exceptions/ParserInputException.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Exceptions/ParserInputException.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Exceptions/ParserException.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Exceptions/ParserException.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/Exceptions.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/BasicQcParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/BasicQcParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/BasicCachedQcParser.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing/BasicCachedQcParser.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Parsing.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/MonoTargetType.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/MonoTargetType.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/ModifierKeyCombo.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/ModifierKeyCombo.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/LoggingThreshold.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/LoggingThreshold.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/LogStorage.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/LogStorage.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/LogQueue.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/LogQueue.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/Log.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/Log.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/ILogStorage.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/ILogStorage.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/ILogQueue.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/ILogQueue.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/ILog.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging/ILog.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Logging.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/link.xml.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/link.xml
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/LambdaCommandData.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/LambdaCommandData.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/InvocationTargetFactory.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/InvocationTargetFactory.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Internal/FieldMethod.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Internal/FieldMethod.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Internal/FieldDelegateMethod.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Internal/FieldDelegateMethod.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Internal/FieldAutoMethod.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Internal/FieldAutoMethod.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Internal/DummyParameter.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Internal/DummyParameter.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Internal/CustomParameter.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Internal/CustomParameter.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Internal.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/InputHelper.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/InputHelper.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/InjectionLoader.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/InjectionLoader.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/Tools/SymbolEditor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/Tools/SymbolEditor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/Tools/QFSW.QC.Editor.Tools.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/Tools/QFSW.QC.Editor.Tools.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/Tools/PrefabUtil.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/Tools/PrefabUtil.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/Tools.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QuantumThemeInspector.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QuantumThemeInspector.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QuantumLocalizationInspector.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QuantumLocalizationInspector.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QuantumKeyConfigInspector.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QuantumKeyConfigInspector.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QuantumConsoleInspector.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QuantumConsoleInspector.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QGUI/QGUILayout.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QGUI/QGUILayout.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QGUI/QFSW.QC.QGUI.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QGUI/QFSW.QC.QGUI.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QGUI/LayoutController.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QGUI/LayoutController.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QGUI/IGUIItem.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QGUI/IGUIItem.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QGUI.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QFSW.QC.Editor.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QFSW.QC.Editor.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QCInspectorBase.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/QCInspectorBase.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/ModifierKeyComboEditor.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/ModifierKeyComboEditor.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/EditorHelpers.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/EditorHelpers.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/DataEntryPopup.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor/DataEntryPopup.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Editor.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Containers/StringContainer.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Containers/StringContainer.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Containers/ArraySingle.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Containers/ArraySingle.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Containers.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Comparators/AlphanumComparator.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Comparators/AlphanumComparator.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Comparators.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/CommandData.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/CommandData.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/AutoScrollOptions.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/AutoScrollOptions.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/QcIgnoreAttribute.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/QcIgnoreAttribute.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/CommandPrefixAttribute.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/CommandPrefixAttribute.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/CommandPlatformAttribute.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/CommandPlatformAttribute.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/CommandParameterDescriptionAttribute.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/CommandParameterDescriptionAttribute.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/CommandDescriptionAttribute.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/CommandDescriptionAttribute.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/CommandAttribute.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes/CommandAttribute.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Attributes.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/WaitWhile.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/WaitWhile.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/WaitUntil.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/WaitUntil.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/WaitRealtime.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/WaitRealtime.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/WaitKey.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/WaitKey.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/WaitFrame.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/WaitFrame.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Wait.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Wait.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Value.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Value.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Typewriter.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Typewriter.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/RemoveLog.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/RemoveLog.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/ReadValue.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/ReadValue.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/ReadLine.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/ReadLine.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/GetKey.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/GetKey.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/GetContext.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/GetContext.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Custom.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Custom.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Core/ICommandAction.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Core/ICommandAction.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Core/ActionState.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Core/ActionState.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Core/ActionExecuter.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Core/ActionExecuter.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Core/ActionContext.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Core/ActionContext.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Core.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Composite.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Composite.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Choice.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Choice.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Async.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions/Async.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts/Actions.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Scripts.meta
+Assets/Plugins/QFSW/Quantum Console/Source/readme.pdf.meta
+Assets/Plugins/QFSW/Quantum Console/Source/readme.pdf
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Quantum Console.prefab.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Quantum Console.prefab
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Quantum Console (SRP).prefab.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Quantum Console (SRP).prefab
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Default Theme.asset.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Default Theme.asset
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Default Theme (SRP).asset.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Default Theme (SRP).asset
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Default Localization.asset.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Default Localization.asset
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Default Key Config.asset.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs/Default Key Config.asset
+Assets/Plugins/QFSW/Quantum Console/Source/Prefabs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Materials/Blur Panel.mat.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Materials/Blur Panel.mat
+Assets/Plugins/QFSW/Quantum Console/Source/Materials.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/TMP/OfficeCodePro-Regular SDF.asset.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/TMP/OfficeCodePro-Regular SDF.asset
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/TMP.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-RegularItalic.ttf.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-RegularItalic.ttf
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-Regular.ttf.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-Regular.ttf
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-MediumItalic.ttf.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-MediumItalic.ttf
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-Medium.ttf.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-Medium.ttf
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-LightItalic.ttf.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-LightItalic.ttf
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-Light.ttf.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-Light.ttf
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-BoldItalic.ttf.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-BoldItalic.ttf
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-Bold.ttf.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/OfficeCodePro-Bold.ttf
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/LICENSE.txt.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts/LICENSE.txt
+Assets/Plugins/QFSW/Quantum Console/Source/Fonts.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/UtilCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/UtilCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/TypeCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/TypeCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/TimeCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/TimeCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/ScreenCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/ScreenCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/SceneCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/SceneCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/QFSW.QC.Extras.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/QFSW.QC.Extras.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/MegaCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/MegaCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/KeyBinderModule.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/KeyBinderModule.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/HttpCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/HttpCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/GraphicsCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/GraphicsCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/FileCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/FileCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/DynamicCodeCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/DynamicCodeCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/ScriptBundleLoader.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/ScriptBundleLoader.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/Plugins/mcs.dll.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/Plugins/mcs.dll
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/Plugins.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/LICENSE.txt.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/LICENSE.txt
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/DeferredSynchronizeInvoke.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/DeferredSynchronizeInvoke.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/CustomReportPrinter.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/CustomReportPrinter.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/CustomDynamicDriver.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/CustomDynamicDriver.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/CodeCompiler.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler/CodeCompiler.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec/CSharpCompiler.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/exec.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/EditorCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/EditorCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/CoroutineCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/CoroutineCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/ApplicationCommands.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Extras/ApplicationCommands.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Extras.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Textures/Tile\#2.png.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Textures/Tile\#2.png
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Textures/Tile\#1.png.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Textures/Tile\#1.png
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Textures/Spawner.png.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Textures/Spawner.png
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Textures/Robot.png.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Textures/Robot.png
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Textures.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Scripts/RobotSpawner.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Scripts/RobotSpawner.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Scripts/RobotCollector.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Scripts/RobotCollector.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Scripts/Robot.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Scripts/Robot.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Scripts/Gate.cs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Scripts/Gate.cs
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Scripts.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/QFSW.QC.Demo.asmdef.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/QFSW.QC.Demo.asmdef
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Prefabs/Robot.prefab.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Prefabs/Robot.prefab
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Prefabs/Death.prefab.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Prefabs/Death.prefab
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Prefabs.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Materials/Wall.mat.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Materials/Wall.mat
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Materials.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/DemoScene.unity.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/DemoScene.unity
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/Spawner.controller.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/Spawner.controller
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/RobotSpawn.anim.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/RobotSpawn.anim
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/Robot.controller.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/Robot.controller
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/PortalSpin.anim.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/PortalSpin.anim
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/GateOpen.anim.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/GateOpen.anim
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/Gate.controller.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations/Gate.controller
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene/Animations.meta
+Assets/Plugins/QFSW/Quantum Console/Source/Demo Scene.meta
+Assets/Plugins/QFSW/Quantum Console/Source/changelog.txt.meta
+Assets/Plugins/QFSW/Quantum Console/Source/changelog.txt
+Assets/Plugins/QFSW/Quantum Console/Source.meta
+Assets/Plugins/QFSW/Quantum Console.meta
+Assets/Plugins/QFSW.meta
