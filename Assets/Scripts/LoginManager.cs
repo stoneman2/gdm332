@@ -7,7 +7,8 @@ using UnityEngine;
 public class LoginManager : MonoBehaviour
 {
     public static LoginManager Instance;
-    public string[] players = new string[64];
+    public string player1;
+    public string player2;
     public string hostServerID;
     public List<uint> AlternatePlayerPrefabs = new List<uint>();
     public string myUsername;
@@ -33,16 +34,36 @@ public class LoginManager : MonoBehaviour
 
     private void HandleClientConnected(ulong clientId)
     {
-        GameManager.Instance.mainMenu.SetActive(false);
-        GameManager.Instance.joinMenu.SetActive(false);
-        GameManager.Instance.hostMenu.SetActive(false);
-        GameManager.Instance.leaveButton.SetActive(true);
-        GameManager.Instance.oldCam.SetActive(false);
+        Debug.Log($"Client connected: {clientId}");
+        SetInGameUIVisible(true);
+    }
+
+    public void SetInGameUIVisible(bool visible)
+    {
+        if (visible)
+        {
+            GameManager.Instance.mainMenu.SetActive(false);
+            GameManager.Instance.joinMenu.SetActive(false);
+            GameManager.Instance.hostMenu.SetActive(false);
+            GameManager.Instance.leaveButton.SetActive(true);
+            GameManager.Instance.oldCam.SetActive(false);
+            GameManager.Instance.scorePanel.SetActive(true);
+        }
+        else
+        {
+            GameManager.Instance.mainMenu.SetActive(true);
+            GameManager.Instance.joinMenu.SetActive(false);
+            GameManager.Instance.hostMenu.SetActive(false);
+            GameManager.Instance.leaveButton.SetActive(false);
+            GameManager.Instance.oldCam.SetActive(true);
+            GameManager.Instance.scorePanel.SetActive(false);
+        }
     }
 
     private void HandleClientDisconnect(ulong clientId)
     {
-        players[clientId] = null;
+        Debug.Log($"Client disconnected: {clientId}");
+        SetInGameUIVisible(false);
     }
 
     public void Awake()
@@ -142,7 +163,8 @@ public class LoginManager : MonoBehaviour
                     isApproved = false;
                 }
 
-                if (players.Contains(payload.username))
+                // If the host's username is already in use, reject the connection
+                if (player1 == payload.username || player2 == payload.username)
                 {
                     Debug.Log("Username already in use");
                     response.Reason = "Username already in use";
@@ -188,8 +210,14 @@ public class LoginManager : MonoBehaviour
             if (isApproved && payload != null)
             {
                 Debug.Log($"Player {clientId} approved with username {payload.username}");
-                // Add our client ID to the player!
-                players[clientId] = payload.username;
+                if (player1 == null)
+                {
+                    player1 = payload.username;
+                }
+                else
+                {
+                    player2 = payload.username;
+                }
             }
 
             // If additional approval steps are needed, set this to true until the additional steps are complete

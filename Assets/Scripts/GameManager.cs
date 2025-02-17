@@ -29,9 +29,10 @@ public class GameManager : MonoBehaviour
     public GameObject redJoin;
     public GameObject blueJoin;
     public GameObject yellowJoin;
-    public GameObject redHost;
-    public GameObject blueHost;
-    public GameObject yellowHost;
+    public GameObject scorePanel;
+    public GameObject scorePanelText1;
+    public GameObject scorePanelText2;
+    public GameObject deathCam;
     public int colorPicked = 0;
  
     public void Awake()

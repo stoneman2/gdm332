@@ -16,6 +16,8 @@ public class MainPlayerScript : NetworkBehaviour
     public NetworkVariable<NetworkString> playerName = new NetworkVariable<NetworkString>(
         new NetworkString{info = "Player"}, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
     public GameObject goggleObject;
+    public List<MonoBehaviour> scriptsDeath;
+    public List<MeshRenderer> renderersDeath;
 
     public struct NetworkString : INetworkSerializable
     {
@@ -144,6 +146,22 @@ public class MainPlayerScript : NetworkBehaviour
         else
         {
             rb.angularVelocity = Vector3.zero;
+        }
+    }
+
+    private void OnEnable()
+    {
+        if (nameLabel != null)
+        {
+            nameLabel.SetActive(true);
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (nameLabel != null)
+        {
+            nameLabel.SetActive(false);
         }
     }
 }
