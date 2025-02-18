@@ -120,9 +120,10 @@ GameObject:
   - component: {fileID: 1278510189621368887}
   - component: {fileID: 7485758973002016149}
   - component: {fileID: 1311639579131906812}
+  - component: {fileID: 6086676315166980386}
   m_Layer: 0
   m_Name: PlayerRed
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -184,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1305001887
+  GlobalObjectIdHash: 2929853429
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -257,6 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a9dcfe17f59704cb1b0cefa371b7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDead: 0
   plyHP:
     m_InternalValue: 0
 --- !u!114 &1311639579131906812
@@ -276,6 +278,20 @@ MonoBehaviour:
   renderersDeath:
   - {fileID: 5813188564326077745}
   - {fileID: 3081730327979692478}
+--- !u!114 &6086676315166980386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878291275813315297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c4febb91c6b2542aee53e64ec83c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombPrefab: {fileID: 5085678264938517783, guid: fca1441c45a00b74292f9b624fd59803,
+    type: 3}
 --- !u!1 &5450262739207691070
 GameObject:
   m_ObjectHideFlags: 0
