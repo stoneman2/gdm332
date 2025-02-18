@@ -23,5 +23,7 @@ public class BombScript : NetworkBehaviour
     {
         GameObject effect = Instantiate(effectPrefab, transform.position, Quaternion.identity);
         effect.GetComponent<NetworkObject>().Spawn();
+
+        Destroy(effect, 2);
     }
 }
