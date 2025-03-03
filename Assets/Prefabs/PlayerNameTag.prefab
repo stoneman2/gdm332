@@ -26,7 +26,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4913020850287616481}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3.276723}
+  m_LocalPosition: {x: 0, y: 0, z: 5.611204}
   m_LocalScale: {x: 1.256, y: 1.256, z: 1.256}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 942.87335, y: 500.46872}
+  m_AnchoredPosition: {x: 1186.1263, y: 642.3506}
   m_SizeDelta: {x: 492.6, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7284207343965889174
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Unity.Netcode.NetworkVariable`1[System.String] (Host)
+  m_text: Player (Host)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

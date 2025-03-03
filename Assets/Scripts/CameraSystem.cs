@@ -7,6 +7,7 @@ using UnityEngine;
 public class CameraSystem : NetworkBehaviour
 {
     public GameObject cameraObject;
+    public List<MonoBehaviour> scriptsRagdoll;
     private void Update()
     {
         // If we're not the owner of this camera, we should hide ourselves so our camera isn't used.

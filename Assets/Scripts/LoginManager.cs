@@ -132,14 +132,14 @@ public class LoginManager : MonoBehaviour
         // Set the spawn location to the host's location
         if (clientId == NetworkManager.Singleton.LocalClientId)
         {
-            spawnPos = new Vector3(2, 1, 0);
+            spawnPos = new Vector3(2, 25, 0);
             spawnRot = Quaternion.Euler(0, 135f, 0);
         }
 
         // Randomize the spawn location for the client
         else
         {
-            spawnPos = new Vector3(Random.Range(-5, 5), 1, Random.Range(-5, 5));
+            spawnPos = new Vector3(Random.Range(-5, 5), 7, Random.Range(-5, 5));
             spawnRot = Quaternion.Euler(0, Random.Range(0, 360), 0);
         }
 

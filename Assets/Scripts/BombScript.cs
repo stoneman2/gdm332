@@ -7,12 +7,13 @@ public class BombScript : NetworkBehaviour
 {
     public BombSpawnerScript bombSpawner;
     public GameObject effectPrefab;
+    public ulong Owner { get; set; }
     private void OnCollisionEnter(Collision collision)
     {
         if (!IsOwner) return;
 
         if (collision.gameObject.tag == "Player")
-        {
+        { 
             ulong networkObjectId = GetComponent<NetworkObject>().NetworkObjectId;
             SpawnEffect();
             bombSpawner.DestroyServerRpc(networkObjectId);

@@ -4,20 +4,21 @@ using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
 using Unity.Collections;
+using System;
 
 public class MainPlayerScript : NetworkBehaviour
 {
     public float speed = 5.0f;
     public float rotationSpeed = 10.0f;
     Rigidbody rb;
-    private NetworkVariable<NetworkString> goggleColor = new NetworkVariable<NetworkString>(
-        new NetworkString{info = "Color"}, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner
-    );
     public NetworkVariable<NetworkString> playerName = new NetworkVariable<NetworkString>(
         new NetworkString{info = "Player"}, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
-    public GameObject goggleObject;
     public List<MonoBehaviour> scriptsDeath;
-    public List<MeshRenderer> renderersDeath;
+    public List<SkinnedMeshRenderer> renderersDeath;
+    private float InputX;
+    private float InputZ;
+    private Animator animator;
+    private bool running;
 
     public struct NetworkString : INetworkSerializable
     {
@@ -40,36 +41,13 @@ public class MainPlayerScript : NetworkBehaviour
     private void ProcessColorInput()
     {
         if (!IsOwner) return;
-        
-        if (colorCooldown > 0)
-        {
-            colorCooldown -= Time.deltaTime;
-            return;
-        }
-
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            // If we press F, we cycle through the colors
-            switch (goggleColor.Value.ToString())
-            {
-                case "Blue":
-                    goggleColor.Value = "Red";
-                    break;
-                case "Red":
-                    goggleColor.Value = "Yellow";
-                    break;
-                case "Yellow":
-                    goggleColor.Value = "Blue";
-                    break;
-            }
-            colorCooldown = 0.5f;
-        }
     }
     public GameObject nameLabel;
 
     private void Start()
     {
         rb = this.GetComponent<Rigidbody>();
+        animator = this.GetComponent<Animator>();
     }
 
     public override void OnNetworkSpawn()
@@ -83,9 +61,6 @@ public class MainPlayerScript : NetworkBehaviour
             string name = LoginManager.Instance.myUsername;
             Debug.Log($"Trying to set the name of {OwnerClientId} to {name}");
             playerName.Value = name;
-
-            // Set default color
-            goggleColor.Value = "Blue";
         }
     }
 
@@ -109,33 +84,35 @@ public class MainPlayerScript : NetworkBehaviour
         {
             nameLabel.GetComponent<TMPro.TextMeshProUGUI>().text = playerName.Value.ToString();
         }
-
-        // Color changing for goggles
-        ProcessColorInput();
-
-        if (goggleColor.Value.ToString() == "Blue")
-        {
-            glassColor = Color.blue;
-        }
-        else if (goggleColor.Value.ToString() == "Red")
-        {
-            glassColor = Color.red;
-        }
-        else if (goggleColor.Value.ToString() == "Yellow")
-        {
-            glassColor = Color.yellow;
-        }
-
-        // Set the color of the goggles
-        goggleObject.GetComponent<Renderer>().material.SetColor("_BaseColor", glassColor);
     }
 
-    private void FixedUpdate()
+    private void MoveForward()
     {
-        float translation = Input.GetAxis("Vertical") * speed;
-        translation *= Time.deltaTime;
-        rb.MovePosition(rb.position + this.transform.forward * translation);
+        float verticalInput = Input.GetAxis("Vertical");
+        if (Math.Abs(verticalInput) > 0.01f)
+        {
+            if (verticalInput > 0.01f)
+            {
+                float translation = verticalInput * speed;
+                translation *= Time.fixedDeltaTime;
+                rb.MovePosition(rb.position + this.transform.forward * translation);
 
+                if (!running)
+                {
+                    running = true;
+                    animator.SetBool("Running", true);
+                }
+            }
+        }
+        else if (running)
+        {
+            running = false;
+            animator.SetBool("Running", false);
+        }
+    }
+
+    private void Turn()
+    {
         float rotation = Input.GetAxis("Horizontal");
         if (rotation != 0)
         {
@@ -148,6 +125,62 @@ public class MainPlayerScript : NetworkBehaviour
             rb.angularVelocity = Vector3.zero;
         }
     }
+
+    // Add these variables to your class
+    public bool isGrounded;
+
+    // Add this method to check ground status
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
+    }
+    
+    private void FixedUpdate()
+    {
+        if (!IsOwner) return;
+
+        if (isGrounded)
+        {
+            animator.SetBool("Falling", false);
+        }
+        else
+        {
+            animator.SetBool("Falling", true);
+        }
+
+        MoveForward();
+        Turn();
+    }
+
+    // private void FixedUpdate()
+    // {
+    //     float translation = Input.GetAxis("Vertical") * speed;
+    //     translation *= Time.deltaTime;
+    //     rb.MovePosition(rb.position + this.transform.forward * translation);
+
+    //     float rotation = Input.GetAxis("Horizontal");
+    //     if (rotation != 0)
+    //     {
+    //         rotation *= rotationSpeed;
+    //         Quaternion turn = Quaternion.Euler(0f, rotation, 0f);
+    //         rb.MoveRotation(rb.rotation * turn);
+    //     }
+    //     else
+    //     {
+    //         rb.angularVelocity = Vector3.zero;
+    //     }
+    // }
 
     private void OnEnable()
     {

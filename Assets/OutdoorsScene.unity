@@ -2950,7 +2950,7 @@ PrefabInstance:
     - target: {fileID: 4845276930943762971, guid: 2da3dcc22749e7f4280737786d898334,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000076293945
+      value: 0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 4845637959249703711, guid: 2da3dcc22749e7f4280737786d898334,
         type: 3}
@@ -6883,9 +6883,9 @@ GameObject:
   - component: {fileID: 1659123630}
   - component: {fileID: 1659123629}
   - component: {fileID: 1659123628}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7560,6 +7560,8 @@ MonoBehaviour:
   scorePanelText2: {fileID: 1543649279}
   deathCam: {fileID: 1033070446}
   colorPicked: 0
+  bombPrefab: {fileID: 5085678264938517783, guid: fca1441c45a00b74292f9b624fd59803,
+    type: 3}
 --- !u!114 &1708849053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7597,7 +7599,7 @@ MonoBehaviour:
     EnableNetworkLogs: 1
     OldPrefabList: []
   RunInBackground: 1
-  LogLevel: 0
+  LogLevel: 1
 --- !u!114 &1708849054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7925,7 +7927,7 @@ MonoBehaviour:
   player1: 
   player2: 
   hostServerID: 
-  AlternatePlayerPrefabs: 9fbfc84d892f39fe2ce9ffb5
+  AlternatePlayerPrefabs: b4e13297e07be499
   myUsername: 
 --- !u!4 &1763715091
 Transform:

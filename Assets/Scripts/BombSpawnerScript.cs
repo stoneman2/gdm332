@@ -14,12 +14,14 @@ public class BombSpawnerScript : NetworkBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            OwnerNetworkAnimationScript networkAnimationScript = GetComponent<OwnerNetworkAnimationScript>();
+            networkAnimationScript.SetTrigger("PuttingDown");
             SpawnBombServerRpc(OwnerClientId);
         }
     }
     
     [ServerRpc]
-    void SpawnBombServerRpc(ulong clientId)
+    public void SpawnBombServerRpc(ulong clientId)
     {
         Vector3 spawnPos = transform.position + (transform.forward * -1.5f) + (transform.up * 0.8f);
         Quaternion spawnRot = transform.rotation;
@@ -27,7 +29,7 @@ public class BombSpawnerScript : NetworkBehaviour
         spawnedBomb.Add(bomb);
         bomb.GetComponent<BombScript>().bombSpawner = this;
         bomb.GetComponent<NetworkObject>().Spawn(true);
-        //bomb.GetComponent<NetworkObject>().SpawnWithOwnership(clientId);
+        bomb.GetComponent<BombScript>().Owner = clientId;
     }
     
     [ServerRpc (RequireOwnership = false)]

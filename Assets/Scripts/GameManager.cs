@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     public GameObject scorePanelText2;
     public GameObject deathCam;
     public int colorPicked = 0;
+    public GameObject bombPrefab;
  
     public void Awake()
     {

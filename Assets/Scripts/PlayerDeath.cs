@@ -9,7 +9,7 @@ public class PlayerDeath : NetworkBehaviour
 {
     private Rigidbody rb;
     public List<MonoBehaviour> scriptsDeath;
-    public List<MeshRenderer> renderersDeath;
+    public List<SkinnedMeshRenderer> renderersDeath;
     private ClientNetworkTransform networkTransform;
     
     private void Start()
@@ -19,7 +19,7 @@ public class PlayerDeath : NetworkBehaviour
     }
     public void Respawn()
     {
-        Vector3 spawnPos = new Vector3(Random.Range(-5, 5), 1, Random.Range(-5, 5));
+        Vector3 spawnPos = new Vector3(Random.Range(-5, 5), 7, Random.Range(-5, 5));
         Quaternion spawnRot = Quaternion.Euler(0, Random.Range(0, 360), 0);
 
         RespawnServerRpc(spawnPos, spawnRot);

@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2929853429
+  GlobalObjectIdHash: 1305001887
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -208,7 +208,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rotationSpeed: 10
-  goggleObject: {fileID: 2960417961980158269}
   scriptsDeath: []
   renderersDeath:
   - {fileID: 5813188564326077745}
@@ -259,6 +258,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDead: 0
+  scriptsRagdoll:
+  - {fileID: 9015759575765063411}
   plyHP:
     m_InternalValue: 0
 --- !u!114 &1311639579131906812
@@ -519,6 +520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraObject: {fileID: 5450262739207691070}
+  scriptsRagdoll: []
 --- !u!1 &7989890711738839570
 GameObject:
   m_ObjectHideFlags: 0
