@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.Netcode;
 using UnityEngine;
+using Unity.Netcode.Transports.UTP;
+using System.Threading.Tasks;
 
 public class LoginManager : MonoBehaviour
 {
@@ -12,11 +14,12 @@ public class LoginManager : MonoBehaviour
     public string hostServerID;
     public List<uint> AlternatePlayerPrefabs = new List<uint>();
     public string myUsername;
+    public string ipAddress = "127.0.0.1";
+    public UnityTransport transport;
 
     public class ConnectionPayload
     {
         public string username;
-        public string joinCode;
         public int colorPicked;
     }
 
@@ -77,23 +80,31 @@ public class LoginManager : MonoBehaviour
             Destroy(this);
         }
     }
+    public string GetLocalIPV4()
+    {
+        return System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName()).AddressList.FirstOrDefault(ip => ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork).ToString();
+    }
 
-    public void StartHost(string serverID, string username, int colorPicked)
+    public void SetIPAddress(string ip)
+    {
+        ipAddress = ip;
+        transport.ConnectionData.Address = ip;
+        Debug.Log($"Set IP Address to {ip}");
+    }
+    public void StartHost(string username, int colorPicked)
     {
         var payload = new ConnectionPayload
         {
             username = username,
-            joinCode = serverID,
             colorPicked = colorPicked
         };
 
         myUsername = username;
-
+        // SetIPAddress(ipAddress);
         string payloadString = JsonUtility.ToJson(payload);
         NetworkManager.Singleton.NetworkConfig.ConnectionData = System.Text.Encoding.ASCII.GetBytes(payloadString);
         NetworkManager.Singleton.ConnectionApprovalCallback = ApprovalCheck;
         NetworkManager.Singleton.StartHost();
-        hostServerID = serverID;
     }
     public void DisconnectFromServer()
     {
@@ -108,12 +119,11 @@ public class LoginManager : MonoBehaviour
         GameManager.Instance.oldCam.SetActive(true);
     }
 
-    public void ClientJoin(string serverID, string username, int colorPicked)
+    public async Task ClientJoin(string joinCode, string username, int colorPicked)
     {
         var payload = new ConnectionPayload
         {
             username = username,
-            joinCode = serverID,
             colorPicked = colorPicked
         };
 
@@ -121,6 +131,9 @@ public class LoginManager : MonoBehaviour
 
         string payloadString = JsonUtility.ToJson(payload);
         NetworkManager.Singleton.NetworkConfig.ConnectionData = System.Text.Encoding.ASCII.GetBytes(payloadString);
+
+        await RelayManager.Instance.JoinRelay(joinCode);
+
         NetworkManager.Singleton.StartClient();
     }
 
@@ -155,30 +168,30 @@ public class LoginManager : MonoBehaviour
 
             if (payload != null)
             {
-                Debug.Log($"Payload: {payload.username} {payload.joinCode}");
-                if (string.IsNullOrEmpty(payload.username) || string.IsNullOrEmpty(payload.joinCode))
-                {
-                    Debug.Log("Invalid payload");
-                    response.Reason = "Invalid payload";
-                    isApproved = false;
-                }
+                // Debug.Log($"Payload: {payload.username} {payload.joinCode}");
+                // if (string.IsNullOrEmpty(payload.username) || string.IsNullOrEmpty(payload.joinCode))
+                // {
+                //     Debug.Log("Invalid payload");
+                //     response.Reason = "Invalid payload";
+                //     isApproved = false;
+                // }
 
-                // If the host's username is already in use, reject the connection
-                if (player1 == payload.username || player2 == payload.username)
-                {
-                    Debug.Log("Username already in use");
-                    response.Reason = "Username already in use";
-                    isApproved = false;
-                }
+                // // If the host's username is already in use, reject the connection
+                // if (player1 == payload.username || player2 == payload.username)
+                // {
+                //     Debug.Log("Username already in use");
+                //     response.Reason = "Username already in use";
+                //     isApproved = false;
+                // }
 
-                Debug.Log(NetworkManager.Singleton.IsHost);
+                // Debug.Log(NetworkManager.Singleton.IsHost);
 
-                if (hostServerID != payload.joinCode && request.ClientNetworkId != 0)
-                {
-                    Debug.Log("Invalid join code");
-                    response.Reason = "Invalid join code";
-                    isApproved = false;
-                }
+                // if (hostServerID != payload.joinCode && request.ClientNetworkId != 0)
+                // {
+                //     Debug.Log("Invalid join code");
+                //     response.Reason = "Invalid join code";
+                //     isApproved = false;
+                // }
             }
 
             // The client identifier to be authenticated

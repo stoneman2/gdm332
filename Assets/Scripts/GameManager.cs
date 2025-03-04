@@ -13,12 +13,12 @@ public class GameManager : MonoBehaviour
     public GameObject joinMenu;
 
     // Host Menu
-    public GameObject hostIDInput;
+    public GameObject hostServerIPInput;
     public GameObject hostUsernameInput;
     public GameObject hostMenuButton;
 
     // Join Menu
-    public GameObject joinServerIDInput;
+    public GameObject joinServerIPInput;
     public GameObject joinUsernameInput;
     public GameObject joinMenuButton;
 
@@ -48,32 +48,37 @@ public class GameManager : MonoBehaviour
         }
     }
     // Host Menu
-    public void OnClickHostMenuButton()
+    public async void OnClickHostMenuButton()
     {
-        string serverID = hostIDInput.GetComponent<TMPro.TMP_InputField>().text;
+        // string serverIP = hostServerIPInput.GetComponent<TMPro.TMP_InputField>().text;
         string username = hostUsernameInput.GetComponent<TMPro.TMP_InputField>().text;
-        if (string.IsNullOrEmpty(serverID) || string.IsNullOrEmpty(username))
+        if (/*string.IsNullOrEmpty(serverIP) ||*/ string.IsNullOrEmpty(username))
         {
             Debug.Log("Empty fields!");
             return;
         }
 
-        LoginManager.Instance.StartHost(serverID, username, colorPicked);
+        if (RelayManager.Instance.IsRelayEnabled)
+        {
+            await RelayManager.Instance.CreateRelay();
+        }
+
+        LoginManager.Instance.StartHost(username, colorPicked);
     }
 
     // Join Menu
-    public void OnClickJoinMenuButton()
+    public async void OnClickJoinMenuButton()
     {
-        string serverID = joinServerIDInput.GetComponent<TMPro.TMP_InputField>().text;
+        string joinCode = joinServerIPInput.GetComponent<TMPro.TMP_InputField>().text;
         string username = joinUsernameInput.GetComponent<TMPro.TMP_InputField>().text;
 
-        if (string.IsNullOrEmpty(serverID) || string.IsNullOrEmpty(username))
+        if (string.IsNullOrEmpty(joinCode) || string.IsNullOrEmpty(username))
         {
             Debug.Log("Empty fields!");
             return;
         }
 
-        LoginManager.Instance.ClientJoin(serverID, username, colorPicked);
+        await LoginManager.Instance.ClientJoin(joinCode, username, colorPicked);
     }
 
     // Menus!
