@@ -16,6 +16,8 @@ public class LoginManager : MonoBehaviour
     public string myUsername;
     public string ipAddress = "127.0.0.1";
     public UnityTransport transport;
+    public string currentJoinCode;
+    public TMPro.TextMeshProUGUI joinCodeText; 
 
     public class ConnectionPayload
     {
@@ -51,6 +53,12 @@ public class LoginManager : MonoBehaviour
             GameManager.Instance.leaveButton.SetActive(true);
             GameManager.Instance.oldCam.SetActive(false);
             GameManager.Instance.scorePanel.SetActive(true);
+
+            if (joinCodeText != null && !string.IsNullOrEmpty(currentJoinCode))
+            {
+                joinCodeText.text = "Join Code: " + currentJoinCode;
+                joinCodeText.gameObject.SetActive(true);
+            }
         }
         else
         {
@@ -60,6 +68,11 @@ public class LoginManager : MonoBehaviour
             GameManager.Instance.leaveButton.SetActive(false);
             GameManager.Instance.oldCam.SetActive(true);
             GameManager.Instance.scorePanel.SetActive(false);
+
+            if (joinCodeText != null)
+            {
+                joinCodeText.gameObject.SetActive(false);
+            }
         }
     }
 
@@ -128,6 +141,7 @@ public class LoginManager : MonoBehaviour
         };
 
         myUsername = username;
+        currentJoinCode = joinCode;
 
         string payloadString = JsonUtility.ToJson(payload);
         NetworkManager.Singleton.NetworkConfig.ConnectionData = System.Text.Encoding.ASCII.GetBytes(payloadString);

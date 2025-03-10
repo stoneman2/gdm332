@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject hostMenuButton;
 
     // Join Menu
-    public GameObject joinServerIPInput;
+    public GameObject joinServerCodeInput;
     public GameObject joinUsernameInput;
     public GameObject joinMenuButton;
 
@@ -69,7 +69,8 @@ public class GameManager : MonoBehaviour
     // Join Menu
     public async void OnClickJoinMenuButton()
     {
-        string joinCode = joinServerIPInput.GetComponent<TMPro.TMP_InputField>().text;
+        Debug.Log(joinServerCodeInput.GetComponent<TMPro.TMP_InputField>().text);
+        string joinCode = joinServerCodeInput.GetComponent<TMPro.TMP_InputField>().text;
         string username = joinUsernameInput.GetComponent<TMPro.TMP_InputField>().text;
 
         if (string.IsNullOrEmpty(joinCode) || string.IsNullOrEmpty(username))

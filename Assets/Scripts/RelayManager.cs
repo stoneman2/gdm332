@@ -40,6 +40,7 @@ public class RelayManager : Singleton<RelayManager>
             Allocation alloc = await RelayService.Instance.CreateAllocationAsync(2);
             string joinCode = await RelayService.Instance.GetJoinCodeAsync(alloc.AllocationId);
             Debug.Log("Join code: " + joinCode);
+            LoginManager.Instance.currentJoinCode = joinCode;
             RelayServerData relayServerData = new RelayServerData(alloc, "dtls");
             NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(relayServerData);
         }
