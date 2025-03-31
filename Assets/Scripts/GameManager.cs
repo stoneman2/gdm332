@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     public GameObject deathCam;
     public int colorPicked = 0;
     public GameObject bombPrefab;
+    public LobbyManagerScript lobbyManagerScript;
  
     public void Awake()
     {
@@ -58,12 +59,14 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        if (RelayManager.Instance.IsRelayEnabled)
-        {
-            await RelayManager.Instance.CreateRelay();
-        }
+        // if (RelayManager.Instance.IsRelayEnabled)
+        // {
+        //     await RelayManager.Instance.CreateRelay();
+        // }
 
-        LoginManager.Instance.StartHost(username, colorPicked);
+        await lobbyManagerScript.CreateLobby();
+        // LoginManager.Instance.StartHost(username, colorPicked);
+
     }
 
     // Join Menu

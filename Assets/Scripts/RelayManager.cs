@@ -10,12 +10,16 @@ using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
 using Unity.Networking.Transport.Relay;
 using System.Threading.Tasks;
-
+using ParrelSync;
 public class RelayManager : Singleton<RelayManager>
 {
     private async void Start()
     {
-        await UnityServices.InitializeAsync();
+        InitializationOptions options = new InitializationOptions();
+#if UNITY_EDITOR
+        options.SetProfile(ClonesManager.IsClone() ? ClonesManager.GetArgument(): "Default");
+#endif
+        await UnityServices.InitializeAsync(options);
         if (!AuthenticationService.Instance.IsSignedIn)
         {
             AuthenticationService.Instance.SignedIn += () =>
