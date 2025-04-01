@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OutdoorsScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
+  - enabled: 1
+    path: Assets/QuickJoin.unity
+    guid: 43ce3c41dbae8f4479007208a9d61ae1
   m_configObjects: {}

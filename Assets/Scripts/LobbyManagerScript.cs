@@ -6,7 +6,7 @@ using Unity.Services.Lobbies;
 using Unity.Services.Lobbies.Models;
 using System.Threading.Tasks;
 
-public class LobbyManagerScript : MonoBehaviour
+public class LobbyManagerScript : Singleton<LobbyManagerScript>
 {
     Lobby hostLobby;
     private string playerName;
@@ -64,7 +64,7 @@ public class LobbyManagerScript : MonoBehaviour
         }
     }
 
-    private void PrintPlayers(Lobby lobby)
+    public void PrintPlayers(Lobby lobby)
     {
         Debug.Log("Players in Lobby : " + lobby.Name + " : " + lobby.Data["GameMode"].Value);
         foreach(Player player in lobby.Players)
